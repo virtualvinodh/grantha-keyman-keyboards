@@ -1,0 +1,236 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Grantha Unicode Phonetic'
+store(&COPYRIGHT) '© 2020 Vinodh Rajan'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows web'
+store(&BITMAP) 'grantha_inscript.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Vowels
+
++ "a" > '𑌅'
++ "A" > '𑌆'
+'𑌅' + "a" > '𑌆'
++ "i" > '𑌇'
++ "I" > '𑌈'
+'𑌇' + "i" > '𑌈'
++ "R" > '𑌋'
++ "u" > '𑌉'
+'𑌉' + "u" > '𑌊'
++ "U" > '𑌊'
+'𑌋' + "u" > '𑍠'
++ "W" > '𑌌'
+"𑌌" + "u"> '𑍡'
++ "e" > '𑌏'
+'𑌅' + "i" > '𑌐'
++ "o" > '𑌓'
+'𑌅' + "u" > '𑌔'
+
+c Shift Free Vocalic vowels
+'𑌰𑍁' + ';' > '𑌋'
+'𑌰𑍂' + ';' > '𑍠'
+'𑌲𑍁' + ';' > '𑌌'
+'𑌲𑍂' + ';' > '𑍡'
+
+c Grantha Specific
+U+1130F + ";" > '𑌏' U+1CF8
+U+11313 + ";" > '𑌓' U+1CF8
+
+c 
+
+c Combining Signs
++ "M" > '𑌂' c Anusvara
+'𑌁' + ";" > '𑌀' c Anusvara above
++ "H" > '𑌃' c Visarga
+'𑌃' + ";" > U+1CF2 c Ardhavisarga
+U+1CF2 + ";" > U+1CF3 c Rotated Ardhavisarga
++ "~" > '𑌁' c Candrabindu
+
+c shift free Anusvara, Visarga, Avagraha etc. 
+'𑌮𑍍' + ';' > '𑌂' c Anusvara
+'𑌹𑍍' + ';' > '𑌃' c Visarga
+'𑌅' + ';' > '𑌽' c Avagraha
+'𑌂' + ';' >  '𑌁' c Candrabindu
+
+c Consonants
++ "k" > '𑌕' '𑍍'
+'𑌕' '𑍍' + "h" > '𑌖' '𑍍'
++ "g" > '𑌗'  '𑍍'
+'𑌗' '𑍍' + "h" > '𑌘' '𑍍'
++ "G" > '𑌙' '𑍍'
+
++ "c" > '𑌚' '𑍍'
+'𑌚' '𑍍' + "h" > '𑌛' '𑍍'
++ "j" > '𑌜' '𑍍'
+'𑌜' '𑍍' + "h" > '𑌝' '𑍍'
++ "J" > '𑌞' '𑍍'
+
++ "T" > '𑌟' '𑍍'
+'𑌟' '𑍍' + "h" > '𑌠' '𑍍'
++ "D" > '𑌡' '𑍍'
+'𑌡' '𑍍' + "h" > '𑌢' '𑍍'
++ "N" > '𑌣' '𑍍'
+
++ "t" > "𑌤" '𑍍'
+'𑌤' '𑍍' + "h" > '𑌥' '𑍍'
++ "d" > '𑌦' '𑍍'
+'𑌦' '𑍍' + "h" > '𑌧' '𑍍'
++ "n" > '𑌨' '𑍍'
+
++ "p" > '𑌪' '𑍍'
+'𑌪' '𑍍' + "h" > '𑌫' '𑍍'
++ "b" > '𑌬' '𑍍'
+'𑌬' '𑍍' + "h" > '𑌭' '𑍍'
++ "m" > '𑌮' '𑍍'
+
++ "y" >'𑌯'  '𑍍'
++ "r" > '𑌰' '𑍍'
++ "l" > '𑌲' '𑍍'
+ '𑌲' '𑍍' + ';' > '𑌳' '𑍍'
++ "L" > '𑌳' '𑍍'
++ "v" > '𑌵' '𑍍'
++ "S" > '𑌷' '𑍍'
++ "s" > '𑌸' '𑍍'
+'𑌸' '𑍍' + "h" > '𑌶' '𑍍' c sh
++ "h" > '𑌹' '𑍍'
+
+c Nukta based
+
++ 'f' > '𑌫𑌼𑍍'
++ 'z' > '𑌜𑌼𑍍'
++ 'Z' > '𑌳𑌼𑍍'
+
+U+01134D + "q" > '𑌼' '𑍍'
+
+c Shift free consonants
+
+'𑌤' '𑍍' + ";" > '𑌟' '𑍍' c TT
+'𑌦' '𑍍' + ";" > '𑌡' '𑍍' c DD
+'𑌨' '𑍍' + ";" > '𑌣' '𑍍' c NN
+'𑌨𑍍𑌗𑍍' + ';' > '𑌙' '𑍍' c nk
+'𑌨𑍍𑌜𑍍' + ';' > '𑌞' '𑍍' c nj
+'𑌶' '𑍍' + ';' >  '𑌷' '𑍍' c ss
+
+c Sub ha
+
+'&' + 'h' > '𑌹' '𑍍'
+
+c Combining Signs
+
+'𑍍' + "a" > nul c Remove Virama
+
+store( cons ) '𑌕𑌖𑌗𑌘𑌙𑌚𑌛𑌜𑌝𑌞𑌟𑌠𑌡𑌢𑌣𑌤𑌥𑌦𑌧𑌨𑌪𑌫𑌬𑌭𑌮𑌯𑌰𑌲𑌵𑌶𑌷𑌸𑌹𑌳𑌼'
+
+any(cons) + 'a' > index(cons,1) '𑌾' c -aa
+'𑍍' + "A" > '𑌾' c -aa
+
+'𑍍' + "i" > '𑌿' c -i
+'𑌿' + "i" > '𑍀' c -ii
+'𑍍' + "I"> '𑍀' c -ii
+
+'𑍍' + "u" > '𑍁' c -u
+'𑍁' + "u" > '𑍂' c -uu
+'𑍍' + "U"> '𑍂' c -uu
+
+'𑍍' + "R" > '𑍃' c -voc r
+'𑍃' + "u" > '𑍄' c -voc rr
+'𑍍' + "W" > '𑍢' c -voc l
+'𑍢' + "u" > '𑍣' c -voc ll
+
+'𑍍' + "e" > '𑍇' c -e
+any(cons) + "i" >  index(cons, 1) '𑍈' c -ai
+'𑍍' + "o" > '𑍋' c  o
+any(cons) + "u" > index(cons, 1) '𑍗' c -au
+
+c Shift Free vocalics
+'𑍍𑌰𑍁' + ';' > '𑍃' c -voc r
+'𑍍𑌰𑍂' + ';' > '𑍄' c -voc rr
+'𑍍𑌲𑍁' + ';' > '𑍢' c -voc l
+'𑍍𑌲𑍂' + ';' > '𑍣' c -voc ll
+
+c Grantha Specific
+U+11357 + "u" > U+1134C c two part au
+U+11347 + ";" > U+11347 U+1CF8 c short e
+U+1134B + ";" > U+1134B U+1CF8 c short o
+
+c Signs
++ "@" > '𑌽' c Avagraha
+'O' + 'M' > U+11350 c OM
++ "#" > U+1135D c Pluta
+
+c Shift Free Pluta and OM
+'𑌓𑌮𑍍𑌮𑍍' + ';' > U+11350 c OM
+'𑌪𑍍𑌳𑍍' + ';' > U+1135D c Pluta
+
+c Numerals
+
++ "0" > U+0BE6
++ "1" > U+0BE7
++ "2"   > U+0BE8
++ "3"   > U+0BE9
++ "4"   > U+0BEA
++ "5"   > U+0BEB
++ "6"   > U+0BEC
++ "7"   > U+0BED
++ "8"   > U+0BEE
++ "9"   > U+0BEF
+
+U+0BE7 U+0BE6 + ";" > U+0BF0 c 10
+U+0BE7 U+0BE6 U+0BE6 + ";" > U+0BF1 c 100
+U+0BE7 U+0BE6 U+0BE6 U+0BE6 + ";" > U+0BF2 c 1000
+
+c Vedic Signs
+
+'𑌗𑍍' + "M" > U+1135E c Agama Anusvara
+U+1135E + "M" > U+1135F c Dirgha Agama Anusvara
+
+c Shift Free
+
+'𑌗𑍍𑌮𑍍' + ';' > U+1135E c Agama Anusvara
+'𑍞𑌮𑍍' + ';' > U+1135F c Dirgha Agama Anusvara
+
+U+0BE6 + ";" > U+11366 c combining 0
+U+0BE7 + ";" > U+11367 c combining 1
+U+0BE8 + ";" > U+11368 c combining 2
+U+0BE9 + ";" > U+11369 c combining 3
+U+0BEA + ";" > U+1136A c combining 4
+U+0BEB + ";" > U+1136B c combining 5
+U+0BEC + ";" > U+1136C c combining 6
+
+U+1133D + ";" > U+11370 c combining a
+U+11315 + ";" > U+11371 c combining ka
+U+11328 + ";" > U+11372 c combining na
+U+11335 U+1133F + ";" > U+11373 c combining vi
+U+1132A + ";" > U+11374 c combining pa
+
+c Devanagari Block
+
++ "." > U+0964 c Danda
+U+0964 + '.' > U+0965 c Danda double
+
+"''" + ';' > U+0951 c Dirga svarita
+'"' + ";" > U+0951 c Dirgha svarita
+"'" + ";" > U+1CF4 c Candra above/udatta (grantha only)
+'_' + ";" > U+0952 c Anudatta
+
+
+c Vedic
+"*" + ";" > U+20F0 c Asterisk above
+"%" + ";" > U+1CF8 c ring above
+"%%" + ";" > U+1CF9  c double ring
+"^" + ";" > U+1CD0 c Karshana
+"=" + ";" > U+1CD3 c Nihshvasa
+"-" + ";" > U+1CD2 c Prenkha
+
+c Joiners
+
+'𑍍' + ":" > U+200D '𑍍' c sub-base
+U+200D '𑍍' + ":" > '𑍍' U+200C c prevent
+
+c remove joiner for ha
+U+200D '𑍍' + 'h' > '𑍍𑌹'
+
+c Add characters for smart quotes 

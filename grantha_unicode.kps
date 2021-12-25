@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>src\readme.htm</ReadMeFile>
+    <GraphicFile>src\splash_grantha.bmp</GraphicFile>
+    <MSIFileName>C:\Users\vinod\OneDrive\Desktop\keyman-14.0.271\keymandesktop.msi</MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder>Grantha Unicode Keyboard</Folder>
+    <Items>
+      <Item>
+        <Name>Start Keyman</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Keyman Help</Name>
+        <FileName>(Product Help)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Keyman Settings</Name>
+        <FileName>(Product Configuration)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Phonetic Keyboard</Name>
+        <FileName>keyboard_phonetic.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Inscript Keyboard</Name>
+        <FileName>keyboard_inscript.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>How to Use</Name>
+        <FileName>how_to_use.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.0</Version>
+    <Name URL="">Grantha Unicode Keyboards</Name>
+    <Copyright URL="">© 2020 Vinodh Rajan</Copyright>
+    <Author URL="mailto:vinodh@virtualvinodh.com">Vinodh Rajan</Author>
+    <WebSite URL="http://www.virtualvinodh.com">http://www.virtualvinodh.com</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>src\readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>src\splash_grantha.bmp</Name>
+      <Description>File splash_grantha.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>src\NotoSansGrantha-Regular.ttf</Name>
+      <Description>Font Noto Sans Grantha Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>src\NotoSerifGrantha-Regular.ttf</Name>
+      <Description>Font Noto Serif Grantha Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>src\keyboard_inscript.pdf</Name>
+      <Description>File keyboard_inscript.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>src\keyboard_phonetic.pdf</Name>
+      <Description>File keyboard_phonetic.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>src\how_to_use.pdf</Name>
+      <Description>File how_to_use.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>src\grantha_inscript.js</Name>
+      <Description>File grantha_inscript.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>src\grantha_inscript.kvk</Name>
+      <Description>File grantha_inscript.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>src\grantha_inscript.kmx</Name>
+      <Description>Keyboard Grantha Unicode Inscript</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>src\grantha_unicode_phonetic.js</Name>
+      <Description>File grantha_unicode_phonetic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>src\grantha_unicode_phonetic.kmx</Name>
+      <Description>Keyboard Grantha Unicode Phonetic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Grantha Unicode Inscript</Name>
+      <ID>grantha_inscript</ID>
+      <Version>1.0</Version>
+      <OSKFont>src\NotoSansGrantha-Regular.ttf</OSKFont>
+      <DisplayFont>src\NotoSerifGrantha-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="sa-Gran">Sanskrit (Grantha)</Language>
+      </Languages>
+    </Keyboard>
+    <Keyboard>
+      <Name>Grantha Unicode Phonetic</Name>
+      <ID>grantha_unicode_phonetic</ID>
+      <Version>1.0</Version>
+      <OSKFont>src\NotoSansGrantha-Regular.ttf</OSKFont>
+      <DisplayFont>src\NotoSansGrantha-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="sa-Gran">Sanskrit (Grantha)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
