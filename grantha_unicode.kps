@@ -37,7 +37,7 @@
       </Item>
       <Item>
         <Name>Phonetic Keyboard</Name>
-        <FileName>keyboard_phonetic.pdf</FileName>
+        <FileName>keyboard_phonetic.htm</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -137,6 +137,12 @@
       <Description>Keyboard Grantha Unicode Phonetic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>src\keyboard_phonetic.htm</Name>
+      <Description>File keyboard_phonetic.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
